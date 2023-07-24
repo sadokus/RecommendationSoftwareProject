@@ -152,7 +152,12 @@ def new_restaurant(np = None):
 def program():
     greet()
     var1 = gather_info(None)
-
+    np = input("Would you like to have another session? (y/n) ")
+    if np.lower() == 'y':
+        greet()
+        gather_info(None)
+    elif np.lower() == 'n':
+        print("Goodbye!")
 
 program()
 
